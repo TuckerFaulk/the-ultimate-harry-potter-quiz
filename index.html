@@ -5,29 +5,526 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the-ultimate-harry-potter-quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-
-    </header>
-    <section>
+    <header class="container-fluid">
         <div class="row">
-            <div class="col-6" id="character-name">
-
-            </div>
-            <div class="col-2" id="num-remaining">
-
-            </div>
-            <div class="col-2" id="score">
-
-            </div>
-            <div class="col-2" id="timer">
-
+            <div class="col-12">
+                <h1>The Ultimate Harry Potter Quiz</h1>
             </div>
         </div>
-    </section>
-    <section id="character-grid">
-
+        <div class="row" id="game-area">
+            <div class="col-6 d-flex justify-content-center align-items-center" id="character-name">
+                <button type="button" class="btn btn-light">Previous</button>
+                <span>Character to Select</span>
+                <button type="button" class="btn btn-light">Next</button>
+            </div>
+            <div class="col-3 d-flex justify-content-center align-items-center" id="num-remaining">
+                <p>Remaining: <span>156</span></p>
+            </div>
+            <div class="col-3 d-flex justify-content-center align-items-center" id="score">
+                <p>Score: <span>0</span>/156</p>
+            </div>
+        </div>
+    </header>
+    <section class="container" id="character-grid">
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/barty-crouch-jr.webp" class="image-box" alt="Barty Crouch Jr">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/alice-longbottom.webp" class="" alt="Alice Longbottom">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/katie-bell.webp" class="" alt="Katie Bell">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/ron-weasley.webp" class="" alt="Ron Weasley">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/norbert.jpg" class="" alt="Norbert">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/james-sirius-potter.webp" class="" alt="James Sirius Potter">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/dedalus-diggle.webp" class="" alt="Dedalus Diggle">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/travers.jfif" class="" alt="Travers">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/frank-longbottom.webp" class="" alt="Frank Longbottom">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/dudley-dursley.jpg" class="" alt="Dudley Dursley">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/olympe-maxime.webp" alt="Olympe Maxime">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/dirk-cresswell.webp" alt="Dirk Cresswell">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1"> 
+                <img src="assets/images/cuthbert-binns.webp" alt="Cuthbert Binns">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/pansy-parkinson.webp" alt="Pansy Parkinson">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/dean-thomas.webp" alt="Dean Thomas">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/demelza-robins.webp" alt="Demelza Robins">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/scorpius-malfoy.webp" alt="Scorpius Malfoy">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/stan-shunpike.webp" alt="Stan Shunpike">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/errol.jpg" alt="Errol">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/john-dawlish.webp" alt="John Dawlish">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/marge-dursley.webp" alt="Marge Dursley">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/bogrod.webp" alt="Bogrod">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/alicia-spinnet.webp" alt="Alicia Spinnet">
+            </div>
+            <div class="col-1">     
+                <img src="assets/images/narcissa-malfoy.webp" alt="Narcissa Malfoy">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/fleur-delacour.jpg" alt="Fleur Delacour">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/dobby.webp" alt="Dobby">
+            </div>
+            <div class="col-1">    
+                <img src="assets/images/amos-diggory.webp" alt="Amos Diggory">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/penelope-clearwater.webp" alt="Penelope Clearwater">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/neville-longbottom.webp" alt="Neville Longbottom">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/lily-potter.webp" alt="Lily Potter">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/oliver-wood.webp" alt="Oliver Wood">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/kendra-dumbledore.webp" alt="Kendra Dumbledore">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/mundungus-fletcher.webp" alt="Mundungus Fletcher">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/eloise-midgen.webp" alt="Eloise Midgen">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/astoria-greengrass.jfif" alt="Astoria Greengrass">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/arabella-figg.webp" alt="Arabella Figg">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/lee-jordan.webp" alt="Lee Jordan">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/nymphadora-tonks.webp" alt="Nymphadora Tonks">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/ginny-weasley.webp" alt="Ginny Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/poppy-pomfrey.webp" alt="Poppy Pomfrey">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/arthur-weasley.webp" alt="Arthur Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/sybill-trelawney.webp" alt="Sybill Trelawney">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/irma-pince.webp" alt="Irma Pince">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/zacharias-smith.webp" alt="Zacharias Smith">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/andromeda-tonks.webp" alt="Andromeda Tonks">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/fang.webp" alt="Fang">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/albus-severus-potter.webp" alt="Albus Severus Potter">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/viktor-krum.webp" alt="Viktor Krum">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/gilderoy-lockhart.webp" alt="Gilderoy Lockhart">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/hermione-granger.webp" alt="Hermione Granger">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/remus-lupin.webp" alt="Remus Lupin">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/justin-finch-fletchley.webp" alt="Justin Finch-Fletchley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/aragog.webp" alt="Aragog">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/severus-snape.webp" alt="Severus Snape">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/mafalda-hopkirk.webp" alt="Mafalda Hopkirk">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/susan-bones.jpg" alt="Susan Bones">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/gregory-goyle.webp" alt="Gregory Goyle">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/alecto-carrow.webp" alt="Alecto Carrow">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/barty-crouch-sr.webp" alt="Barty Crouch Sr">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/alastor-moody.webp" alt="Alastor Moody">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">   
+            <div class="col-1">
+                <img src="assets/images/igor-karkaroff.webp" alt="Igor Karkaroff">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/horace-slughorn.webp" alt="Horace Slughorn">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/the-bloody-baron.webp" alt="The Bloody Baron">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/luna-lovegood.webp" alt="Luna Lovegood">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/dennis-creevey.webp" alt="Dennis Creevey">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/nearly-headless-nick.webp" alt="Nearly Headless Nick">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/rufus-scrimgeour.webp" alt="Rufus Scrimgeour">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/corban-yaxley.webp" alt="Corban Yaxley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/cho-chang.webp" alt="Cho Chang">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/the-fat-friar.webp" alt="The Fat Friar">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/rose-weasley.webp" alt="Rose Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/antonin-dolohov.webp" alt="Antonin Dolohov">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/beedle-the-bard.webp" alt="Beedle the Bard">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/ariana-dumbledore.webp" alt="Ariana Dumbledore">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/mykew-gregorovitch.webp" alt="Mykew Gregorovitch">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/fluffy.webp" alt="Fluffy">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/peter-pettigrew.webp" alt="Peter Pettigrew">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/garrick-ollivander.webp" alt="Garrick Ollivander">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/augusta-longbottom.webp" alt="Augusta Longbottom">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/myrtle-warren.webp" alt="Myrtle Warren">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/james-potter.webp" alt="James Potter">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/augustus-rookwood.webp" alt="Augustus Rookwood">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/rubeus-hagrid.webp" alt="Rubeus Hagrid">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/cornelius-fudge.webp" alt="Cornelius Fudge">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/seamus-finnigan.webp" alt="Seamus Finnigan">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/trevor.jpg" alt="Trevor">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/buckbeak.webp" alt="Buckbeak">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/parvati-patil.webp" alt="Parvati Patil">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/minerva-mcgonagall.webp" alt="Minerva McGonagall">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/harry-potter.webp" alt="Harry Potter">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/rolanda-hooch.webp" alt="Rolanda Hooch">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/hugo-weasley.webp" alt="Hugo Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/nagini.jpg" alt="Nagini">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/frank-bryce.webp" alt="Frank Bryce">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/kingsley-shacklebolt.webp" alt="Kingsley Shacklebolt">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/vernon-dursley.webp" alt="Vernon Dursley">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/nicolas-flamel.webp" alt="Nicolas Flamel">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/aurora-sinistra.webp" alt="Aurora Sinistra">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/madam-rosmerta.webp" alt="Madam Rosmerta">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/vincent-crabbe.webp" alt="Vincent Crabbe">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/blaise-zabini.webp" alt="Blaise Zabini">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/scabbers.jpg" alt="Scabbers">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/reginald-cattermole.webp" alt="Reginald Cattermole">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/lord-voldemort.webp" alt="Lord Voldemort">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/pigwidgeon.webp" alt="Pigwidgeon">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/thomas-marvolo-riddle.webp" alt="Thomas Marvolo Riddle">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/petunia-dursley.webp" alt="Petunia Dursley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/romilda-vane.webp" alt="Romilda Vane">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/george-weasley.webp" alt="George Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/septima-vector.webp" alt="Septima Vector">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/hedwig.webp" alt="Hedwig">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/sirius-black.webp" alt="Sirius Black">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/argus-filch.webp" alt="Argus Filch">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/great-aunt-muriel.webp" alt="Great Aunt Muriel">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/dolores-umbridge.webp" alt="Dolores Umbridge">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/scabior.webp" alt="Scabior">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/amycus-carrow.webp" alt="Amycus Carrow">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/angelina-johnson.jpg" alt="Angelina Johnson">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/crookshanks.jpg" alt="Crookshanks">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/fawkes.webp" alt="Fawkes">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/kreacher.webp" alt="Kreacher">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/gabrielle-delacour.webp" alt="Gabrielle Delacour">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/pius-thicknesse.webp" alt="Pius Thicknesse">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/millicent-bulstrode.webp" alt="Millicent Bulstrode">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/bathilda-bagshot.webp" alt="Bathilda Bagshot">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/amelia-bones.webp" alt="Amelia Bones">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/elphias-doge.webp" alt="Elphias Doge">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/silvanus-kettleburn.jpg" alt="Silvanus Kettleburn">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/filius-flitwick.webp" alt="Filius Flitwick">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/cormac-mclaggen.webp" alt="Cormac McLaggen">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/grawp.jpg" alt="Grawp">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/draco-malfoy.webp" alt="Draco Malfoy">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/fred-weasley.webp" alt="Fred Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/albus-dumbledore.webp" alt="Albus Dumbledore">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/bill-weasley.webp" alt="Bill Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/griphook.webp" alt="Griphook">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/xenophilius-lovegood.webp" alt="Xenophilius Lovegood">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/pomona-sprout.webp" alt="Pomona Sprout">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/helena-ravenclaw.webp" alt="Helena Ravenclaw">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/bellatrix-lestrange.webp" alt="Bellatrix Lestrange">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/cedric-diggory.webp" alt="Cedric Diggory">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/fenrir-greyback.webp" alt="Fenrir Greyback">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/lily-luna-potter.webp" alt="Lily Luna Potter">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/hannah-abbott.webp" alt="Hannah Abbott">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <img src="assets/images/albert-runcorn.webp" alt="Albert Runcorn">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/rita-skeeter.webp" alt="Rita Skeeter">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/percy-weasley.webp" alt="Percy Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/lavender-brown.webp" alt="Lavender Brown">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/walden-macnair.webp" alt="Walden Macnair">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/the-fat-lady.jpg" alt="The Fat Lady ">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/lucius-malfoy.webp" alt="Lucius Malfoy">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/colin-creevey.webp" alt="Colin Creevey">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/quirinus-quirrell.webp" alt="Quirinus Quirrell">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/molly-weasley.webp" alt="Molly Weasley">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/padma-patil.webp" alt="Padma Patil">
+            </div>
+            <div class="col-1">
+                <img src="assets/images/aberforth-dumbledore.webp" alt="Aberforth Dumbledore">
+            </div>
+        </div>
     </section>
     <footer>
 

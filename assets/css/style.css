@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background-color: bisque;
+    position: fixed;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Game Area */
+
+#game-area {
+    height: 75px;
+}
+
+#game-area .col-3 {
+    padding: 0;
+}
+
+#game-area .col-3 p {
+    margin: 0;
+}
+
+#character-name span {
+    margin: 0;
+    text-align: center;
+    margin: 0 20px;
+}
+
+/* Character Grid */
+
+#character-grid {
+    position: relative;
+    top: 150px;
+}
+
+.col-1 {
+    padding: 0;
+    height: 150px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+}
+
+/* Footer */
+
+footer {
+    height: 75px;
+    background-color: bisque;
+    position: relative;
+    top: 160px;
+}
