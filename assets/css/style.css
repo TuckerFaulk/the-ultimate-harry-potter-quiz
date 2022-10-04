@@ -30,10 +30,11 @@ h1 {
     margin: 0;
 }
 
-#character-name span {
+#select_character {
     margin: 0;
     text-align: center;
     margin: 0 20px;
+    width: 200px;
 }
 
 /* Character Grid */

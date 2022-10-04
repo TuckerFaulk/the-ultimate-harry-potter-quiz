@@ -173,7 +173,10 @@ score: 0
 
     if (game.characterNumber > 0) {
         $("#previous").removeClass("invisible");
-    };
+    } else if (game.characterNumber == game.characterList.length) {
+        $("#next").addClass("invisible");
+    }
+    
 });
 
 $("#previous").click(function() {
