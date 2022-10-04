@@ -18,15 +18,15 @@
         </div>
         <div class="row" id="game-area">
             <div class="col-6 d-flex justify-content-center align-items-center" id="character-name">
-                <button type="button" class="btn btn-light">Previous</button>
-                <span>Character to Select</span>
-                <button type="button" class="btn btn-light">Next</button>
+                <button type="button" class="btn btn-light invisible" id="previous">Previous</button>
+                <span id="select_character">Character to Select</span>
+                <button type="button" class="btn btn-light" id="next">Next</button>
             </div>
-            <div class="col-3 d-flex justify-content-center align-items-center" id="num-remaining">
-                <p>Remaining: <span>156</span></p>
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <p>Remaining: <span id="num-remaining">156</span></p>
             </div>
-            <div class="col-3 d-flex justify-content-center align-items-center" id="score">
-                <p>Score: <span>0</span>/156</p>
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <p>Score: <span id="score">0</span>/156</p>
             </div>
         </div>
     </header>
@@ -107,73 +107,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/cuthbert-binns.webp" alt="Cuthbert Binns">
+                <img src="assets/images/cuthbert-binns.webp" class="card-img" alt="Cuthbert Binns">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/pansy-parkinson.webp" alt="Pansy Parkinson">
+                <img src="assets/images/pansy-parkinson.webp" class="card-img" alt="Pansy Parkinson">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/dean-thomas.webp" alt="Dean Thomas">
+                <img src="assets/images/dean-thomas.webp" class="card-img" alt="Dean Thomas">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/demelza-robins.webp" alt="Demelza Robins">
+                <img src="assets/images/demelza-robins.webp" class="card-img" alt="Demelza Robins">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/scorpius-malfoy.webp" alt="Scorpius Malfoy">
+                <img src="assets/images/scorpius-malfoy.webp" class="card-img" alt="Scorpius Malfoy">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/stan-shunpike.webp" alt="Stan Shunpike">
+                <img src="assets/images/stan-shunpike.webp" class="card-img" alt="Stan Shunpike">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/errol.jpg" alt="Errol">
+                <img src="assets/images/errol.jpg" class="card-img" alt="Errol">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/john-dawlish.webp" alt="John Dawlish">
+                <img src="assets/images/john-dawlish.webp" class="card-img" alt="John Dawlish">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/marge-dursley.webp" alt="Marge Dursley">
+                <img src="assets/images/marge-dursley.webp" class="card-img" alt="Marge Dursley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/bogrod.webp" alt="Bogrod">
+                <img src="assets/images/bogrod.webp" class="card-img" alt="Bogrod">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/alicia-spinnet.webp" alt="Alicia Spinnet">
+                <img src="assets/images/alicia-spinnet.webp" class="card-img" alt="Alicia Spinnet">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/narcissa-malfoy.webp" alt="Narcissa Malfoy">
+                <img src="assets/images/narcissa-malfoy.webp" class="card-img" alt="Narcissa Malfoy">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Dirk Cresswell</p>
                 </div>
@@ -181,73 +181,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/fleur-delacour.jpg" alt="Fleur Delacour">
+                <img src="assets/images/fleur-delacour.jpg" class="card-img" alt="Fleur Delacour">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/dobby.webp" alt="Dobby">
+                <img src="assets/images/dobby.webp" class="card-img" alt="Dobby">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/amos-diggory.webp" alt="Amos Diggory">
+                <img src="assets/images/amos-diggory.webp" class="card-img" alt="Amos Diggory">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/penelope-clearwater.webp" alt="Penelope Clearwater">
+                <img src="assets/images/penelope-clearwater.webp" class="card-img" alt="Penelope Clearwater">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/neville-longbottom.webp" alt="Neville Longbottom">
+                <img src="assets/images/neville-longbottom.webp" class="card-img" alt="Neville Longbottom">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/lily-potter.webp" alt="Lily Potter">
+                <img src="assets/images/lily-potter.webp" class="card-img" alt="Lily Potter">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/oliver-wood.webp" alt="Oliver Wood">
+                <img src="assets/images/oliver-wood.webp" class="card-img" alt="Oliver Wood">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/kendra-dumbledore.webp" alt="Kendra Dumbledore">
+                <img src="assets/images/kendra-dumbledore.webp" class="card-img" alt="Kendra Dumbledore">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/mundungus-fletcher.webp" alt="Mundungus Fletcher">
+                <img src="assets/images/mundungus-fletcher.webp" class="card-img" alt="Mundungus Fletcher">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/eloise-midgen.webp" alt="Eloise Midgen">
+                <img src="assets/images/eloise-midgen.webp" class="card-img" alt="Eloise Midgen">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/astoria-greengrass.jfif" alt="Astoria Greengrass">
+                <img src="assets/images/astoria-greengrass.jfif" class="card-img" alt="Astoria Greengrass">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/arabella-figg.webp" alt="Arabella Figg">
+                <img src="assets/images/arabella-figg.webp" class="card-img" alt="Arabella Figg">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
@@ -255,73 +255,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/lee-jordan.webp" alt="Lee Jordan">
+                <img src="assets/images/lee-jordan.webp" class="card-img" alt="Lee Jordan">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/nymphadora-tonks.webp" alt="Nymphadora Tonks">
+                <img src="assets/images/nymphadora-tonks.webp" class="card-img" alt="Nymphadora Tonks">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/ginny-weasley.webp" alt="Ginny Weasley">
+                <img src="assets/images/ginny-weasley.webp" class="card-img" alt="Ginny Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/poppy-pomfrey.webp" alt="Poppy Pomfrey">
+                <img src="assets/images/poppy-pomfrey.webp" class="card-img" alt="Poppy Pomfrey">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/arthur-weasley.webp" alt="Arthur Weasley">
+                <img src="assets/images/arthur-weasley.webp" class="card-img" alt="Arthur Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/sybill-trelawney.webp" alt="Sybill Trelawney">
+                <img src="assets/images/sybill-trelawney.webp" class="card-img" alt="Sybill Trelawney">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/irma-pince.webp" alt="Irma Pince">
+                <img src="assets/images/irma-pince.webp" class="card-img" alt="Irma Pince">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/zacharias-smith.webp" alt="Zacharias Smith">
+                <img src="assets/images/zacharias-smith.webp" class="card-img" alt="Zacharias Smith">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/andromeda-tonks.webp" alt="Andromeda Tonks">
+                <img src="assets/images/andromeda-tonks.webp" class="card-img" alt="Andromeda Tonks">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/fang.webp" alt="Fang">
+                <img src="assets/images/fang.webp" class="card-img" alt="Fang">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/albus-severus-potter.webp" alt="Albus Severus Potter">
+                <img src="assets/images/albus-severus-potter.webp" class="card-img" alt="Albus Severus Potter">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/viktor-krum.webp" alt="Viktor Krum">
+                <img src="assets/images/viktor-krum.webp" class="card-img" alt="Viktor Krum">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title">Viktor Krum</p>
                 </div>
@@ -329,73 +329,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/gilderoy-lockhart.webp" alt="Gilderoy Lockhart">
+                <img src="assets/images/gilderoy-lockhart.webp" class="card-img" alt="Gilderoy Lockhart">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/hermione-granger.webp" alt="Hermione Granger">
+                <img src="assets/images/hermione-granger.webp" class="card-img" alt="Hermione Granger">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/remus-lupin.webp" alt="Remus Lupin">
+                <img src="assets/images/remus-lupin.webp" class="card-img" alt="Remus Lupin">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/justin-finch-fletchley.webp" alt="Justin Finch-Fletchley">
+                <img src="assets/images/justin-finch-fletchley.webp" class="card-img" alt="Justin Finch-Fletchley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/aragog.webp" alt="Aragog">
+                <img src="assets/images/aragog.webp" class="card-img" alt="Aragog">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/severus-snape.webp" alt="Severus Snape">
+                <img src="assets/images/severus-snape.webp" class="card-img" alt="Severus Snape">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/mafalda-hopkirk.webp" alt="Mafalda Hopkirk">
+                <img src="assets/images/mafalda-hopkirk.webp" class="card-img" alt="Mafalda Hopkirk">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/susan-bones.jpg" alt="Susan Bones">
+                <img src="assets/images/susan-bones.jpg" class="card-img" alt="Susan Bones">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/gregory-goyle.webp" alt="Gregory Goyle">
+                <img src="assets/images/gregory-goyle.webp" class="card-img" alt="Gregory Goyle">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/alecto-carrow.webp" alt="Alecto Carrow">
+                <img src="assets/images/alecto-carrow.webp" class="card-img" alt="Alecto Carrow">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/barty-crouch-sr.webp" alt="Barty Crouch Sr">
+                <img src="assets/images/barty-crouch-sr.webp" class="card-img" alt="Barty Crouch Sr">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/alastor-moody.webp" alt="Alastor Moody">
+                <img src="assets/images/alastor-moody.webp" class="card-img" alt="Alastor Moody">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
@@ -403,147 +403,73 @@
         </div>
         <div class="row justify-content-md-center">   
             <div class="col-1 card">
-                <img src="assets/images/igor-karkaroff.webp" alt="Igor Karkaroff">
+                <img src="assets/images/igor-karkaroff.webp" class="card-img" alt="Igor Karkaroff">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/horace-slughorn.webp" alt="Horace Slughorn">
+                <img src="assets/images/horace-slughorn.webp" class="card-img" alt="Horace Slughorn">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/the-bloody-baron.webp" alt="The Bloody Baron">
+                <img src="assets/images/the-bloody-baron.webp" class="card-img" alt="The Bloody Baron">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/luna-lovegood.webp" alt="Luna Lovegood">
+                <img src="assets/images/luna-lovegood.webp" class="card-img" alt="Luna Lovegood">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/dennis-creevey.webp" alt="Dennis Creevey">
+                <img src="assets/images/dennis-creevey.webp" class="card-img" alt="Dennis Creevey">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/nearly-headless-nick.webp" alt="Nearly Headless Nick">
+                <img src="assets/images/nearly-headless-nick.webp" class="card-img" alt="Nearly Headless Nick">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/rufus-scrimgeour.webp" alt="Rufus Scrimgeour">
+                <img src="assets/images/rufus-scrimgeour.webp" class="card-img" alt="Rufus Scrimgeour">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/corban-yaxley.webp" alt="Corban Yaxley">
+                <img src="assets/images/corban-yaxley.webp" class="card-img" alt="Corban Yaxley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/cho-chang.webp" alt="Cho Chang">
+                <img src="assets/images/cho-chang.webp" class="card-img" alt="Cho Chang">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/the-fat-friar.webp" alt="The Fat Friar">
+                <img src="assets/images/the-fat-friar.webp" class="card-img" alt="The Fat Friar">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/rose-weasley.webp" alt="Rose Weasley">
+                <img src="assets/images/rose-weasley.webp" class="card-img" alt="Rose Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/antonin-dolohov.webp" alt="Antonin Dolohov">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-1 card">
-                <img src="assets/images/beedle-the-bard.webp" alt="Beedle the Bard">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/ariana-dumbledore.webp" alt="Ariana Dumbledore">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/mykew-gregorovitch.webp" alt="Mykew Gregorovitch">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/fluffy.webp" alt="Fluffy">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/peter-pettigrew.webp" alt="Peter Pettigrew">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/garrick-ollivander.webp" alt="Garrick Ollivander">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/augusta-longbottom.webp" alt="Augusta Longbottom">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/myrtle-warren.webp" alt="Myrtle Warren">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/james-potter.webp" alt="James Potter">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/augustus-rookwood.webp" alt="Augustus Rookwood">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/rubeus-hagrid.webp" alt="Rubeus Hagrid">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/cornelius-fudge.webp" alt="Cornelius Fudge">
+                <img src="assets/images/antonin-dolohov.webp" class="card-img" alt="Antonin Dolohov">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
@@ -551,147 +477,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/seamus-finnigan.webp" alt="Seamus Finnigan">
+                <img src="assets/images/beedle-the-bard.webp" class="card-img" alt="Beedle the Bard">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/trevor.jpg" alt="Trevor">
+                <img src="assets/images/ariana-dumbledore.webp" class="card-img" alt="Ariana Dumbledore">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/buckbeak.webp" alt="Buckbeak">
+                <img src="assets/images/mykew-gregorovitch.webp" class="card-img" alt="Mykew Gregorovitch">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/parvati-patil.webp" alt="Parvati Patil">
+                <img src="assets/images/fluffy.webp" class="card-img" alt="Fluffy">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/minerva-mcgonagall.webp" alt="Minerva McGonagall">
+                <img src="assets/images/peter-pettigrew.webp" class="card-img" alt="Peter Pettigrew">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/harry-potter.webp" alt="Harry Potter">
+                <img src="assets/images/garrick-ollivander.webp" class="card-img" alt="Garrick Ollivander">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/rolanda-hooch.webp" alt="Rolanda Hooch">
+                <img src="assets/images/augusta-longbottom.webp" class="card-img" alt="Augusta Longbottom">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/hugo-weasley.webp" alt="Hugo Weasley">
+                <img src="assets/images/myrtle-warren.webp" class="card-img" alt="Myrtle Warren">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/nagini.jpg" alt="Nagini">
+                <img src="assets/images/james-potter.webp" class="card-img" alt="James Potter">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/frank-bryce.webp" alt="Frank Bryce">
+                <img src="assets/images/augustus-rookwood.webp" class="card-img" alt="Augustus Rookwood">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/kingsley-shacklebolt.webp" alt="Kingsley Shacklebolt">
+                <img src="assets/images/rubeus-hagrid.webp" class="card-img" alt="Rubeus Hagrid">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/vernon-dursley.webp" alt="Vernon Dursley">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-1 card">
-                <img src="assets/images/nicolas-flamel.webp" alt="Nicolas Flamel">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/aurora-sinistra.webp" alt="Aurora Sinistra">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/madam-rosmerta.webp" alt="Madam Rosmerta">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/vincent-crabbe.webp" alt="Vincent Crabbe">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/blaise-zabini.webp" alt="Blaise Zabini">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/scabbers.jpg" alt="Scabbers">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/reginald-cattermole.webp" alt="Reginald Cattermole">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/lord-voldemort.webp" alt="Lord Voldemort">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/pigwidgeon.webp" alt="Pigwidgeon">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/thomas-marvolo-riddle.webp" alt="Thomas Marvolo Riddle">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/petunia-dursley.webp" alt="Petunia Dursley">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/romilda-vane.webp" alt="Romilda Vane">
+                <img src="assets/images/cornelius-fudge.webp" class="card-img" alt="Cornelius Fudge">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
@@ -699,147 +551,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/george-weasley.webp" alt="George Weasley">
+                <img src="assets/images/seamus-finnigan.webp" class="card-img" alt="Seamus Finnigan">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/septima-vector.webp" alt="Septima Vector">
+                <img src="assets/images/trevor.jpg" class="card-img" alt="Trevor">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/hedwig.webp" alt="Hedwig">
+                <img src="assets/images/buckbeak.webp" class="card-img" alt="Buckbeak">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/sirius-black.webp" alt="Sirius Black">
+                <img src="assets/images/parvati-patil.webp" class="card-img" alt="Parvati Patil">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/argus-filch.webp" alt="Argus Filch">
+                <img src="assets/images/minerva-mcgonagall.webp" class="card-img" alt="Minerva McGonagall">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/great-aunt-muriel.webp" alt="Great Aunt Muriel">
+                <img src="assets/images/harry-potter.webp" class="card-img" alt="Harry Potter">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/dolores-umbridge.webp" alt="Dolores Umbridge">
+                <img src="assets/images/rolanda-hooch.webp" class="card-img" alt="Rolanda Hooch">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/scabior.webp" alt="Scabior">
+                <img src="assets/images/hugo-weasley.webp" class="card-img" alt="Hugo Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/amycus-carrow.webp" alt="Amycus Carrow">
+                <img src="assets/images/nagini.jpg" class="card-img" alt="Nagini">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/angelina-johnson.jpg" alt="Angelina Johnson">
+                <img src="assets/images/frank-bryce.webp" class="card-img" alt="Frank Bryce">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/crookshanks.jpg" alt="Crookshanks">
+                <img src="assets/images/kingsley-shacklebolt.webp" class="card-img" alt="Kingsley Shacklebolt">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/fawkes.webp" alt="Fawkes">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-1 card">
-                <img src="assets/images/kreacher.webp" alt="Kreacher">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/gabrielle-delacour.webp" alt="Gabrielle Delacour">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/pius-thicknesse.webp" alt="Pius Thicknesse">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/millicent-bulstrode.webp" alt="Millicent Bulstrode">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/bathilda-bagshot.webp" alt="Bathilda Bagshot">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/amelia-bones.webp" alt="Amelia Bones">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/elphias-doge.webp" alt="Elphias Doge">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/silvanus-kettleburn.jpg" alt="Silvanus Kettleburn">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/filius-flitwick.webp" alt="Filius Flitwick">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/cormac-mclaggen.webp" alt="Cormac McLaggen">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/grawp.jpg" alt="Grawp">
-                <div class="card-img-overlay d-flex align-items-end invisible">
-                    <p class="card-title"></p>
-                </div>
-            </div>
-            <div class="col-1 card">
-                <img src="assets/images/draco-malfoy.webp" alt="Draco Malfoy">
+                <img src="assets/images/vernon-dursley.webp" class="card-img" alt="Vernon Dursley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                     <p class="card-title"></p>
                 </div>
@@ -847,73 +625,295 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/fred-weasley.webp" alt="Fred Weasley">
+                <img src="assets/images/nicolas-flamel.webp" class="card-img" alt="Nicolas Flamel">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/aurora-sinistra.webp" class="card-img" alt="Aurora Sinistra">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/madam-rosmerta.webp" class="card-img" alt="Madam Rosmerta">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/vincent-crabbe.webp" class="card-img" alt="Vincent Crabbe">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/blaise-zabini.webp" class="card-img" alt="Blaise Zabini">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/scabbers.jpg" class="card-img" alt="Scabbers">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/reginald-cattermole.webp" class="card-img" alt="Reginald Cattermole">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/lord-voldemort.webp" class="card-img" alt="Lord Voldemort">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/pigwidgeon.webp" class="card-img" alt="Pigwidgeon">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/thomas-marvolo-riddle.webp" class="card-img" alt="Thomas Marvolo Riddle">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/petunia-dursley.webp" class="card-img" alt="Petunia Dursley">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/romilda-vane.webp" class="card-img" alt="Romilda Vane">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1 card">
+                <img src="assets/images/george-weasley.webp" class="card-img" alt="George Weasley">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/septima-vector.webp" class="card-img" alt="Septima Vector">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/hedwig.webp" class="card-img" alt="Hedwig">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/sirius-black.webp" class="card-img" alt="Sirius Black">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/argus-filch.webp" class="card-img" alt="Argus Filch">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/great-aunt-muriel.webp" class="card-img" alt="Great Aunt Muriel">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/dolores-umbridge.webp" class="card-img" alt="Dolores Umbridge">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/scabior.webp" class="card-img" alt="Scabior">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/amycus-carrow.webp" class="card-img" alt="Amycus Carrow">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/angelina-johnson.jpg" class="card-img" alt="Angelina Johnson">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/crookshanks.jpg" class="card-img" alt="Crookshanks">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/fawkes.webp" class="card-img" alt="Fawkes">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1 card">
+                <img src="assets/images/kreacher.webp" class="card-img" alt="Kreacher">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/gabrielle-delacour.webp" class="card-img" alt="Gabrielle Delacour">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/pius-thicknesse.webp" class="card-img" alt="Pius Thicknesse">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/millicent-bulstrode.webp" class="card-img" alt="Millicent Bulstrode">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/bathilda-bagshot.webp" class="card-img" alt="Bathilda Bagshot">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/amelia-bones.webp" class="card-img" alt="Amelia Bones">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/elphias-doge.webp" class="card-img" alt="Elphias Doge">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/silvanus-kettleburn.jpg" class="card-img" alt="Silvanus Kettleburn">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/filius-flitwick.webp" class="card-img" alt="Filius Flitwick">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/cormac-mclaggen.webp" class="card-img" alt="Cormac McLaggen">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/grawp.jpg" class="card-img" alt="Grawp">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+            <div class="col-1 card">
+                <img src="assets/images/draco-malfoy.webp" class="card-img" alt="Draco Malfoy">
+                <div class="card-img-overlay d-flex align-items-end invisible">
+                    <p class="card-title"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1 card">
+                <img src="assets/images/fred-weasley.webp" class="card-img" alt="Fred Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/albus-dumbledore.webp" alt="Albus Dumbledore">
+                <img src="assets/images/albus-dumbledore.webp" class="card-img" alt="Albus Dumbledore">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/bill-weasley.webp" alt="Bill Weasley">
+                <img src="assets/images/bill-weasley.webp" class="card-img" alt="Bill Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/griphook.webp" alt="Griphook">
+                <img src="assets/images/griphook.webp" class="card-img" alt="Griphook">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/xenophilius-lovegood.webp" alt="Xenophilius Lovegood">
+                <img src="assets/images/xenophilius-lovegood.webp" class="card-img" alt="Xenophilius Lovegood">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/pomona-sprout.webp" alt="Pomona Sprout">
+                <img src="assets/images/pomona-sprout.webp" class="card-img" alt="Pomona Sprout">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/helena-ravenclaw.webp" alt="Helena Ravenclaw">
+                <img src="assets/images/helena-ravenclaw.webp" class="card-img" alt="Helena Ravenclaw">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/bellatrix-lestrange.webp" alt="Bellatrix Lestrange">
+                <img src="assets/images/bellatrix-lestrange.webp" class="card-img" alt="Bellatrix Lestrange">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/cedric-diggory.webp" alt="Cedric Diggory">
+                <img src="assets/images/cedric-diggory.webp" class="card-img" alt="Cedric Diggory">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/fenrir-greyback.webp" alt="Fenrir Greyback">
+                <img src="assets/images/fenrir-greyback.webp" class="card-img" alt="Fenrir Greyback">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/lily-luna-potter.webp" alt="Lily Luna Potter">
+                <img src="assets/images/lily-luna-potter.webp" class="card-img" alt="Lily Luna Potter">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/hannah-abbott.webp" alt="Hannah Abbott">
+                <img src="assets/images/hannah-abbott.webp" class="card-img" alt="Hannah Abbott">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
@@ -921,73 +921,73 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1 card">
-                <img src="assets/images/albert-runcorn.webp" alt="Albert Runcorn">
+                <img src="assets/images/albert-runcorn.webp" class="card-img" alt="Albert Runcorn">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/rita-skeeter.webp" alt="Rita Skeeter">
+                <img src="assets/images/rita-skeeter.webp" class="card-img" alt="Rita Skeeter">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/percy-weasley.webp" alt="Percy Weasley">
+                <img src="assets/images/percy-weasley.webp" class="card-img" alt="Percy Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/lavender-brown.webp" alt="Lavender Brown">
+                <img src="assets/images/lavender-brown.webp" class="card-img" alt="Lavender Brown">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/walden-macnair.webp" alt="Walden Macnair">
+                <img src="assets/images/walden-macnair.webp" class="card-img" alt="Walden Macnair">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/the-fat-lady.jpg" alt="The Fat Lady">
+                <img src="assets/images/the-fat-lady.jpg" class="card-img" alt="The Fat Lady">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/lucius-malfoy.webp" alt="Lucius Malfoy">
+                <img src="assets/images/lucius-malfoy.webp" class="card-img" alt="Lucius Malfoy">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/colin-creevey.webp" alt="Colin Creevey">
+                <img src="assets/images/colin-creevey.webp" class="card-img" alt="Colin Creevey">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/quirinus-quirrell.webp" alt="Quirinus Quirrell">
+                <img src="assets/images/quirinus-quirrell.webp" class="card-img" alt="Quirinus Quirrell">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/molly-weasley.webp" alt="Molly Weasley">
+                <img src="assets/images/molly-weasley.webp" class="card-img" alt="Molly Weasley">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/padma-patil.webp" alt="Padma Patil">
+                <img src="assets/images/padma-patil.webp" class="card-img" alt="Padma Patil">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
             </div>
             <div class="col-1 card">
-                <img src="assets/images/aberforth-dumbledore.webp" alt="Aberforth Dumbledore">
+                <img src="assets/images/aberforth-dumbledore.webp" class="card-img" alt="Aberforth Dumbledore">
                 <div class="card-img-overlay d-flex align-items-end invisible">
                         <p class="card-title"></p>
                 </div>
@@ -997,5 +997,8 @@
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
