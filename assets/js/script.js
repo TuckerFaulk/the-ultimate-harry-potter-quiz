@@ -88,6 +88,7 @@ var game = {
 "Gilderoy Lockhart",
 "Fenrir Greyback",
 "Errol",
+"Lucius Malfoy",
 "Lily Potter",
 "Irma Pince",
 "Bellatrix Lestrange",
@@ -106,6 +107,7 @@ var game = {
 "Molly Weasley",
 "Kingsley Shacklebolt",
 "Luna Lovegood",
+"Narcissa Malfoy",
 "Minerva McGonagall",
 "Eloise Midgen",
 "Beedle the Bard",
@@ -122,7 +124,6 @@ var game = {
 "Andromeda Tonks",
 "Albert Runcorn",
 "Walden Macnair",
-"Narcissa Malfoy",
 "Cuthbert Binns",
 "Pigwidgeon",
 "Severus Snape",
@@ -136,7 +137,6 @@ var game = {
 "Viktor Krum",
 "Draco Malfoy",
 "Poppy Pomfrey",
-"Lucius Malfoy",
 "Blaise Zabini",
 "Buckbeak",
 "Cormac McLaggen",
@@ -188,7 +188,7 @@ $("#previous").click(function() {
         $("#previous").addClass("invisible");
     };
 
-    if (game.characterNumber << (game.characterList.length -1)) {
+    if (game.characterNumber < (game.characterList.length -1)) {
         $("#next").removeClass("invisible");
     };
 });
@@ -199,11 +199,18 @@ $(".card-img").click(function() {
         
         let id = game.characterList.indexOf(this.alt);
         game.characterList.splice(id, 1);
-        
+
         updateScore();
         updateCharactersRemaining();
 
+        if (id === (game.characterList.length)) {
+            game.characterNumber = 0;
+            $("#previous").addClass("invisible");
+            $("#next").removeClass("invisible");
+        } 
+        
         displayCharacter();
+
     } else {
         $(this).siblings(".card-img-overlay").removeClass("invisible").addClass("incorrect");
         
@@ -232,7 +239,9 @@ function updateCharactersRemaining() {
     $("#num-remaining").html(game.charactersRemaining);
 }
 
-
+/**
+ * Updates 
+ */
 function updateScore() {
     game.score++;
     $("#score").html(game.score);
