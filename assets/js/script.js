@@ -166,7 +166,6 @@ score: 0
 /**
  * Gobal Event Listeners
  */
-
  $("#next").click(function() {
     game.characterNumber++;
     displayCharacter();
@@ -178,6 +177,7 @@ score: 0
     if (game.characterNumber === (game.characterList.length -1)) {
         $("#next").addClass("invisible");
     };
+
 });
 
 $("#previous").click(function() {
@@ -194,11 +194,12 @@ $("#previous").click(function() {
 });
 
 $(".card-img").click(function() {
-    if (this.alt === game.characterList[game.characterNumber]) {
+    if (this.alt === $("#select_character").html()) {
         $(this).siblings(".card-img-overlay").removeClass("invisible").addClass("correct");
         
         let id = game.characterList.indexOf(this.alt);
         game.characterList.splice(id, 1);
+        game.characterNumber = id;
 
         updateScore();
         updateCharactersRemaining();
@@ -216,6 +217,9 @@ $(".card-img").click(function() {
         
         let id = game.characterList.indexOf(this.alt);
         game.characterList.splice(id, 1);
+
+        let resetCharacterNumber = game.characterList.indexOf( $("#select_character").html());
+       game.characterNumber = resetCharacterNumber;
         
         updateCharactersRemaining();
     }
@@ -240,7 +244,7 @@ function updateCharactersRemaining() {
 }
 
 /**
- * Updates 
+ * Increments the player score and updates the game area score
  */
 function updateScore() {
     game.score++;
