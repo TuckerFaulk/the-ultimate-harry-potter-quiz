@@ -22,6 +22,38 @@ h1 {
     color: rgb(255, 230, 88);
 }
 
+/* Message Board */
+
+.message-board {
+    height: 2160px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.521);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 3;
+}
+
+#hogwarts-letter {
+    height: 1100px;
+    width: 800px;
+    position: relative;
+}
+
+.how-to-play{
+    width: 550px;
+    position: relative;
+    bottom: 950px;
+    z-index: 2;
+}
+
+#mcgonagall-sig{
+    height: 75px;
+    width: 300px;
+    position: relative;
+    bottom: 10px;
+}
+
 /* Header - Game Area */
 
 #game-area {
