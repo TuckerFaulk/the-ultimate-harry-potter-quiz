@@ -45,9 +45,13 @@ score: 0
 
 /**
  * Gobal Event Listeners: Loaded on DomContentLoaded allowing the game to run
- * 
  */
 document.addEventListener("DOMContentLoaded", function () {
+    $("#play-btn").click(function () {
+        $(".message-board").addClass("invisible");
+        $(".how-to-play").addClass("invisible");
+    });
+
     $("#next").click(function () {
         game.characterNumber++;
         displayCharacter();
@@ -89,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $("#previous").addClass("invisible");
         $("#give-up").addClass("invisible");
 
-        // Display gameSummary();
+        gameSummary();
 
         $("#reset").removeClass("invisible");
     });
@@ -158,6 +162,28 @@ function updateCharactersRemaining() {
 function updateScore() {
     game.score++;
     $("#score").html(game.score);
+}
+
+/**
+ * 
+ */
+function gameSummary() {
+    // Update #grade
+    // Add funtion to game play section (end of game and when give up pressed)
+
+    $("#player-score").html(game.score)
+
+    if (game.score < 10) {
+        $("#grade").html("Troll")
+    }
+
+    $(".message-board").removeClass("invisible");
+    $(".game-summary").removeClass("invisible");
+
+    $("#close-btn").click(function () {
+        $(".message-board").addClass("invisible");
+        $(".game-summary").addClass("invisible");
+    });
 }
 
 /**

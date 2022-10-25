@@ -40,18 +40,39 @@ h1 {
     position: relative;
 }
 
-.how-to-play{
+.how-to-play {
     width: 550px;
     position: relative;
-    bottom: 950px;
+    bottom: 750px;
     z-index: 2;
 }
 
-#mcgonagall-sig{
+#mcgonagall-sig {
     height: 75px;
     width: 300px;
     position: relative;
     bottom: 10px;
+}
+
+.game-summary {
+    width: 550px;
+    text-align: center;
+    position: relative;
+    bottom: 1400px;
+    z-index: 2;
+}
+
+.break {
+    border-top: 2px solid red;
+    border-radius: 20px;
+    width: 250px;
+    margin: 35px auto;
+}
+
+#play-btn{
+    padding: 25px 50px;
+    position: relative;
+    left: 225px;
 }
 
 /* Header - Game Area */
