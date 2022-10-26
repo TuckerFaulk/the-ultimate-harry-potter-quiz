@@ -120,9 +120,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 $("#next").removeClass("invisible");
             }
 
-            // if (game.game.characterList.length === 0) {gameSummary, $("#reset").removeClass("invisible"); ? displayCharacter()}; CHECK IF GAME WON
+            if (game.characterList.length === 0) {
+                $("#next").addClass("invisible");
+                $("#previous").addClass("invisible");
+                $("#give-up").addClass("invisible");
 
-            displayCharacter();
+                gameSummary();
+
+                $("#reset").removeClass("invisible");
+            } else {
+                displayCharacter();
+            }     
 
         } else {
             $(this).siblings(".card-img-overlay").removeClass("invisible").addClass("incorrect");
@@ -168,13 +176,24 @@ function updateScore() {
  * 
  */
 function gameSummary() {
-    // Update #grade
-    // Add funtion to game play section (end of game and when give up pressed)
 
     $("#player-score").html(game.score)
 
-    if (game.score < 10) {
+    // PASS: Oustanding (100%) Exceeds Expectations (76%-99%) Acceptable (51-75%)
+    // FAIL: Poor (21-50%) Dreadful (11-20%) Troll (<10%)
+
+    if (game.score <= 16) {
         $("#grade").html("Troll")
+    } else if (game.score <= 31) {
+        $("#grade").html("Dreadful")
+    } else if (game.score <= 78) {
+        $("#grade").html("Poor")
+    } else if (game.score <= 117) {
+        $("#grade").html("Acceptable")
+    } else if (game.score <= 155) {
+        $("#grade").html("Exceeds Expectations")
+    } else if (game.score === 156) {
+        $("#grade").html("Outstanding")
     }
 
     $(".message-board").removeClass("invisible");
@@ -195,9 +214,3 @@ function gameSummary() {
 }
 
 displayCharacter()
-
-/*
-
-8. gameSummary display: Display results
-9. Seperate for 100% correct
-*/
