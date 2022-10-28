@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (game.characterList.length === 0) {
+                $("#select_character").html("-");
                 $("#next").addClass("invisible");
                 $("#previous").addClass("invisible");
                 $("#give-up").addClass("invisible");
